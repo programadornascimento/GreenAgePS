@@ -1,7 +1,7 @@
 package Personagem;
 
 public class Equipamento extends Item {
-	private Integer tipoEquipamento;
+	private TipoEquipamento tipoEquipamento;
 	private Atributos modificadorDeAtributos;
 	
 	public Integer getTipoEquipamento() {
