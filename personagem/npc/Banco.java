@@ -1,4 +1,7 @@
-package Personagem;
+package personagem.npc;
+
+import personagem.NPC;
+import personagem.Personagem;
 
 public class Banco extends NPC {
 	private Personagem titular;
@@ -25,3 +28,4 @@ public class Banco extends NPC {
 		return false;
 	}
 }
+

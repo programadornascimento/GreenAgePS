@@ -1,4 +1,7 @@
-package Personagem;
+package personagem.item;
+
+import personagem.Atributos;
+import personagem.Personagem;
 
 public class ItemConsumivel extends Item {
 	private Integer duracao;

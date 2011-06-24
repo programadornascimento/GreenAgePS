@@ -1,10 +1,13 @@
-package Personagem;
+package personagem.item;
+
+import personagem.Atributos;
+import personagem.Personagem;
 
 public class Equipamento extends Item {
 	private TipoEquipamento tipoEquipamento;
 	private Atributos modificadorDeAtributos;
 	
-	public Integer getTipoEquipamento() {
+	public TipoEquipamento getTipoEquipamento() {
 		return tipoEquipamento;
 	}
 
@@ -12,7 +15,7 @@ public class Equipamento extends Item {
 		return modificadorDeAtributos;
 	}
 
-	public void setTipoEquipamento(Integer tipoEquipamento) {
+	public void setTipoEquipamento(TipoEquipamento tipoEquipamento) {
 		this.tipoEquipamento = tipoEquipamento;
 	}
 

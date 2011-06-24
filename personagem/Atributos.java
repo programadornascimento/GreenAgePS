@@ -1,4 +1,4 @@
-package Personagem;
+package personagem;
 
 public class Atributos {
 	private Integer exp;
@@ -65,3 +65,4 @@ public class Atributos {
 		this.constituicao = constituicao;
 	}
 }
+

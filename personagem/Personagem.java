@@ -1,4 +1,8 @@
-package Personagem;
+package personagem;
+
+import personagem.perfil.Classe;
+import personagem.perfil.Etnia;
+import personagem.perfil.Sexo;
 
 public class Personagem extends Entidade {
 	private String nome;
@@ -6,10 +10,12 @@ public class Personagem extends Entidade {
 	private Integer dinheiro;
 	private Sexo sexo;
 	private Integer nivel;
+	
 	private Etnia etnia;
 	private Inventario inventario;
+	private Classe classe;
 	
-	public Mapa.Mapa getMapa() {
+	public mapa.Mapa getMapa() {
 		return mapa;
 	}
 	
@@ -24,23 +30,23 @@ public class Personagem extends Entidade {
 	public String getNome() {
 		return nome;
 	}
-	
+
 	public Atributos getAtributos() {
 		return atributos;
 	}
-	
+
 	public Integer getDinheiro() {
 		return dinheiro;
 	}
-	
+
 	public Sexo getSexo() {
 		return sexo;
 	}
-	
+
 	public Integer getNivel() {
 		return nivel;
 	}
-	
+
 	public Etnia getEtnia() {
 		return etnia;
 	}
@@ -49,7 +55,11 @@ public class Personagem extends Entidade {
 		return inventario;
 	}
 
-	public void setMapa(Mapa.Mapa mapa) {
+	public Classe getClasse() {
+		return classe;
+	}
+
+	public void setMapa(mapa.Mapa mapa) {
 		this.mapa = mapa;
 	}
 	
@@ -60,32 +70,37 @@ public class Personagem extends Entidade {
 	public void setPosicao(Ponto2D posicao) {
 		this.posicao = posicao;
 	}
-	
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
 	public void setAtributos(Atributos atributos) {
 		this.atributos = atributos;
 	}
-	
+
 	public void setDinheiro(Integer dinheiro) {
 		this.dinheiro = dinheiro;
 	}
-	
+
 	public void setSexo(Sexo sexo) {
 		this.sexo = sexo;
 	}
-	
+
 	public void setNivel(Integer nivel) {
 		this.nivel = nivel;
 	}
-	
+
 	public void setEtnia(Etnia etnia) {
 		this.etnia = etnia;
 	}
-	
+
 	public void setInventario(Inventario inventario) {
 		this.inventario = inventario;
 	}
+
+	public void setClasse(Classe classe) {
+		this.classe = classe;
+	}
 }
+

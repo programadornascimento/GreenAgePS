@@ -1,4 +1,6 @@
-package Personagem;
+package personagem.item;
+
+import personagem.Personagem;
 
 public class ItemNaoConsumivel extends Item {
 	
@@ -7,3 +9,4 @@ public class ItemNaoConsumivel extends Item {
 		return false;
 	}
 }
+

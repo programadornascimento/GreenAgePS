@@ -1,7 +1,9 @@
-package Personagem;
+package personagem;
 
 import java.util.List;
 import java.util.Set;
+
+import personagem.item.Item;
 
 public class Inventario {
 	private Integer limite;
@@ -23,3 +25,4 @@ public class Inventario {
 		this.itens = itens;
 	}
 }
+

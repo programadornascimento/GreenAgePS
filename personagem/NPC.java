@@ -1,10 +1,12 @@
-package Personagem;
+package personagem;
+
+import personagem.perfil.Aparencia;
 
 public abstract class NPC extends Entidade {
 	protected String nome;
 	protected Aparencia aparencia;
 	
-	public Mapa.Mapa getMapa() {
+	public mapa.Mapa getMapa() {
 		return mapa;
 	}
 	
@@ -24,7 +26,7 @@ public abstract class NPC extends Entidade {
 		return aparencia;
 	}
 
-	public void setMapa(Mapa.Mapa mapa) {
+	public void setMapa(mapa.Mapa mapa) {
 		this.mapa = mapa;
 	}
 	
@@ -46,3 +48,4 @@ public abstract class NPC extends Entidade {
 	
 	public abstract boolean iniciar(Personagem pessoa);
 }
+

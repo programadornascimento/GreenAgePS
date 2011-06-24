@@ -1,4 +1,6 @@
-package Personagem;
+package personagem.item;
+
+import personagem.Personagem;
 
 public abstract class Item {
 	private String nome;
@@ -31,3 +33,4 @@ public abstract class Item {
 	
 	public abstract boolean usar(Personagem pessoa);
 }
+

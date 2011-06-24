@@ -1,4 +1,8 @@
-package Personagem;
+package personagem.npc;
+
+import personagem.NPC;
+import personagem.Personagem;
+import personagem.perfil.Sexo;
 
 public class Pessoa extends NPC {
 	private Sexo sexo;
@@ -16,3 +20,4 @@ public class Pessoa extends NPC {
 		return false;
 	}
 }
+

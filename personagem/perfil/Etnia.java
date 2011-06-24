@@ -1,4 +1,6 @@
-package Personagem;
+package personagem.perfil;
+
+import personagem.Atributos;
 
 public class Etnia {
 	private String nome;
@@ -29,3 +31,4 @@ public class Etnia {
 		this.aparencia = aparencia;
 	}
 }
+

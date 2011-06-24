@@ -1,4 +1,4 @@
-package Personagem;
+package personagem;
 
 public class Ponto2D {
 	private Integer x;
@@ -20,3 +20,4 @@ public class Ponto2D {
 		this.y = y;
 	}
 }
+

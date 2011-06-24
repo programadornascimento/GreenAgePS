@@ -1,4 +1,4 @@
-package Personagem;
+package personagem.item;
 
 public class ItemAparencia {
 	private Integer precedencia;
@@ -20,3 +20,4 @@ public class ItemAparencia {
 		this.diretorio = diretorio;
 	}
 }
+

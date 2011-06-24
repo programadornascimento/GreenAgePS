@@ -1,4 +1,8 @@
-package Personagem;
+package personagem.npc;
+
+import personagem.Atributos;
+import personagem.NPC;
+import personagem.Personagem;
 
 public class Monstro extends NPC {
 	private Integer maximoMonstros;
@@ -34,3 +38,4 @@ public class Monstro extends NPC {
 		return false;
 	}
 }
+

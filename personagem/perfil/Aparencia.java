@@ -1,6 +1,8 @@
-package Personagem;
+package personagem.perfil;
 
 import java.util.Map;
+
+import personagem.item.ItemAparencia;
 
 public class Aparencia {
 	private String diretorioBase;
@@ -22,3 +24,4 @@ public class Aparencia {
 		this.componentes = componentes;
 	}
 }
+

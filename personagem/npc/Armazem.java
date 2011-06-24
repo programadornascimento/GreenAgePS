@@ -1,4 +1,8 @@
-package Personagem;
+package personagem.npc;
+
+import personagem.Inventario;
+import personagem.NPC;
+import personagem.Personagem;
 
 public class Armazem extends NPC {
 	private Personagem titular;
@@ -25,3 +29,4 @@ public class Armazem extends NPC {
 		return false;
 	}
 }
+
