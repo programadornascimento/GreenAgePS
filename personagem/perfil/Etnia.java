@@ -1,5 +1,6 @@
 package personagem.perfil;
 
+import personagem.Aparencia;
 import personagem.Atributos;
 
 public class Etnia {

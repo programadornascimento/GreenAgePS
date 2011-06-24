@@ -1,8 +1,7 @@
-package personagem.perfil;
+package personagem;
 
 import java.util.Map;
 
-import personagem.item.ItemAparencia;
 
 public class Aparencia {
 	private String diretorioBase;

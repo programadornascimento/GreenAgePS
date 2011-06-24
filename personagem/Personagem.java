@@ -2,7 +2,6 @@ package personagem;
 
 import personagem.perfil.Classe;
 import personagem.perfil.Etnia;
-import personagem.perfil.Sexo;
 
 public class Personagem extends Entidade {
 	private String nome;

@@ -1,6 +1,5 @@
 package personagem;
 
-import personagem.perfil.Aparencia;
 
 public abstract class NPC extends Entidade {
 	protected String nome;

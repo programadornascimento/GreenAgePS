@@ -1,7 +1,6 @@
 package personagem.item;
 
 import personagem.Atributos;
-import personagem.Personagem;
 
 public class Equipamento extends Item {
 	private TipoEquipamento tipoEquipamento;
@@ -23,8 +22,8 @@ public class Equipamento extends Item {
 		this.modificadorDeAtributos = modificadorDeAtributos;
 	}
 	
-	public boolean usar(Personagem pessoa) {
-		//Script para usar equipamento
-		return false;
+	public ElementoItem criar() {
+		//Script para criar elemento de equipamento
+		return null;
 	}
 }

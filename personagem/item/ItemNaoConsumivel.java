@@ -1,12 +1,9 @@
 package personagem.item;
 
-import personagem.Personagem;
-
 public class ItemNaoConsumivel extends Item {
-	
-	public boolean usar(Personagem pessoa) {
-		//Script para usar item não-consumível
-		return false;
+	public ElementoItem criar() {
+		//Script para criar elemento de item não-consumível
+		return null;
 	}
 }
 

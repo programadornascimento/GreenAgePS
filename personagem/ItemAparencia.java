@@ -1,4 +1,4 @@
-package personagem.item;
+package personagem;
 
 public class ItemAparencia {
 	private Integer precedencia;

@@ -1,7 +1,5 @@
 package personagem.item;
 
-import personagem.Personagem;
-
 public abstract class Item {
 	private String nome;
 	private String descricao;
@@ -31,6 +29,6 @@ public abstract class Item {
 		this.valor = valor;
 	}
 	
-	public abstract boolean usar(Personagem pessoa);
+	public abstract ElementoItem criar();
 }
 

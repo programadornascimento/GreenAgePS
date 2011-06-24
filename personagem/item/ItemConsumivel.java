@@ -1,7 +1,6 @@
 package personagem.item;
 
 import personagem.Atributos;
-import personagem.Personagem;
 
 public class ItemConsumivel extends Item {
 	private Integer duracao;
@@ -23,8 +22,8 @@ public class ItemConsumivel extends Item {
 		this.modificadorDeAtributos = modificadorDeAtributos;
 	}
 	
-	public boolean usar(Personagem pessoa) {
-		//Script para usar item consumível
-		return true;
+	public ElementoItem criar() {
+		//Script para criar elemento de item consumível
+		return null;
 	}
 }
