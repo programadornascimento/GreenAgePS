@@ -7,6 +7,7 @@ public class Habilidade {
 	private Integer duracao;
 	private TipoHabilidade tipo;
 	private Atributos modificadorDeAtributos;
+	private Integer nivelMinimo;
 	
 	public String getNome() {
 		return nome;
@@ -24,6 +25,10 @@ public class Habilidade {
 		return modificadorDeAtributos;
 	}
 	
+	public Integer getNivelMinimo() {
+		return nivelMinimo;
+	}
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -38,5 +43,9 @@ public class Habilidade {
 	
 	public void setModificadorDeAtributos(Atributos modificadorDeAtributos) {
 		this.modificadorDeAtributos = modificadorDeAtributos;
+	}
+
+	public void setNivelMinimo(Integer nivelMinimo) {
+		this.nivelMinimo = nivelMinimo;
 	}
 }
