@@ -1,5 +1,6 @@
 package dominio;
 
+import dominio.item.ElementoEquipamento;
 import dominio.perfil.Classe;
 import dominio.perfil.Etnia;
 
@@ -9,6 +10,8 @@ public class Personagem extends Entidade {
 	private Integer dinheiro;
 	private Sexo sexo;
 	private Integer nivel;
+	private ElementoEquipamento equipamentoDefesa;
+	private ElementoEquipamento equipamentoAtaque;
 	
 	private Etnia etnia;
 	private Inventario inventario;
@@ -44,6 +47,14 @@ public class Personagem extends Entidade {
 
 	public Integer getNivel() {
 		return nivel;
+	}
+
+	public ElementoEquipamento getEquipamentoDefesa() {
+		return equipamentoDefesa;
+	}
+
+	public ElementoEquipamento getEquipamentoAtaque() {
+		return equipamentoAtaque;
 	}
 
 	public Etnia getEtnia() {
@@ -88,6 +99,14 @@ public class Personagem extends Entidade {
 
 	public void setNivel(Integer nivel) {
 		this.nivel = nivel;
+	}
+
+	public void setEquipamentoDefesa(ElementoEquipamento equipamentoDefesa) {
+		this.equipamentoDefesa = equipamentoDefesa;
+	}
+
+	public void setEquipamentoAtaque(ElementoEquipamento equipamentoAtaque) {
+		this.equipamentoAtaque = equipamentoAtaque;
 	}
 
 	public void setEtnia(Etnia etnia) {

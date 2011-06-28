@@ -2,7 +2,9 @@ package dominio;
 
 public class Atributos {
 	private Integer exp;
+	private Integer maxHp;
 	private Integer hp;
+	private Integer maxMp;
 	private Integer mp;
 	private Integer forca;
 	private Integer inteligencia;
@@ -13,8 +15,16 @@ public class Atributos {
 		return exp;
 	}
 	
+	public Integer getMaxHp() {
+		return maxHp;
+	}
+	
 	public Integer getHp() {
 		return hp;
+	}
+	
+	public Integer getMaxMp() {
+		return maxMp;
 	}
 	
 	public Integer getMp() {
@@ -41,8 +51,16 @@ public class Atributos {
 		this.exp = exp;
 	}
 	
+	public void setMaxHp(Integer maxHp) {
+		this.maxHp = maxHp;
+	}
+	
 	public void setHp(Integer hp) {
 		this.hp = hp;
+	}
+	
+	public void setMaxMp(Integer maxMp) {
+		this.maxMp = maxMp;
 	}
 	
 	public void setMp(Integer mp) {
