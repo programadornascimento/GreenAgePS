@@ -6,67 +6,54 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public abstract class NPC extends Entidade {
+import dominio.item.ElementoItem;
+
+public abstract class Item extends Selecionavel {
 	protected String nome;
-	protected Aparencia aparencia;
+	protected String descricao;
+	protected Integer valor;
+	private static Map<Integer, Item> all; //By ID
 	
-	private static Map<Integer, NPC> all; //By ID
-	
-	protected NPC() {}
-	
-	protected NPC(Integer type) {
+	protected Item(String nome, String descricao, Integer valor, Integer type) {
 		super(type);
+		this.nome = nome;
+		this.descricao = descricao;
+		this.valor = valor;
 	}
-	
-	public mapa.Mapa getMapa() {
-		return mapa;
-	}
-	
-	public EntidadeEstado getEstado() {
-		return estado;
-	}
-	
-	public Ponto2D getPosicao() {
-		return posicao;
-	}
-	
+
 	public String getNome() {
 		return nome;
 	}
-
-	public Aparencia getAparencia() {
-		return aparencia;
-	}
-
-	public void setMapa(mapa.Mapa mapa) {
-		this.mapa = mapa;
+	
+	public String getDescricao() {
+		return descricao;
 	}
 	
-	public void setEstado(EntidadeEstado estado) {
-		this.estado = estado;
+	public Integer getValor() {
+		return valor;
 	}
 	
-	public void setPosicao(Ponto2D posicao) {
-		this.posicao = posicao;
-	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public void setAparencia(Aparencia aparencia) {
-		this.aparencia = aparencia;
+	
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 	
-	public abstract boolean iniciar(Personagem pessoa);
+	public void setValor(Integer valor) {
+		this.valor = valor;
+	}
+	
+	public abstract ElementoItem criar();
 	
 	///////////////////////////////
 	//Métodos de coleção estática//
 	///////////////////////////////
 	
-	public static List<NPC> getAll() {
+	public static List<Item> getAll() {
 		tryAndCreate();
-		List<NPC> list = new ArrayList<NPC>();
+		List<Item> list = new ArrayList<Item>();
 		Set<Integer> indexes = all.keySet();
 		for(Integer index : indexes) {
 			list.add(all.get(index));
@@ -74,7 +61,7 @@ public abstract class NPC extends Entidade {
 		return list;
 	}
 	
-	public static boolean exists(NPC obj) {
+	public static boolean exists(Item obj) {
 		tryAndCreate();
 		return (all.containsKey(obj.id));
 	}
@@ -84,8 +71,8 @@ public abstract class NPC extends Entidade {
 		return all.containsKey(id);
 	}
 	
-	public static NPC get(Integer id) {
-		NPC returnValue = null;
+	public static Item get(Integer id) {
+		Item returnValue = null;
 		tryAndCreate();
 		if(exists(id)) {
 			returnValue = all.get(id);
@@ -98,19 +85,19 @@ public abstract class NPC extends Entidade {
 		return all.isEmpty();
 	}
 	
-	public static void register(NPC obj) {
+	public static void register(Item obj) {
 		tryAndCreate();
 		all.put(obj.id, obj);
 	}
 	
-	public static void unregister(NPC obj) {
+	public static void unregister(Item obj) {
 		tryAndCreate();
 		all.remove(obj.id);
 	}
 	
 	private static void tryAndCreate() {
 		if(all == null) {
-			all = new HashMap<Integer, NPC>();
+			all = new HashMap<Integer, Item>();
 		}
 	}
 }

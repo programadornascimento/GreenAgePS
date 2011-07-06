@@ -9,6 +9,11 @@ public class Monstro extends NPC {
 	private Integer intervaloRenascimento;
 	private Atributos atributos;
 	
+	public Monstro() {
+		super(4);
+		super.register(this);
+	}
+	
 	public Integer getMaximoMonstros() {
 		return maximoMonstros;
 	}

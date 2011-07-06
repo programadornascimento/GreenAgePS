@@ -7,6 +7,11 @@ import dominio.Sexo;
 public class Pessoa extends NPC {
 	private Sexo sexo;
 	
+	public Pessoa() {
+		super(5);
+		super.register(this);
+	}
+	
 	public Sexo getSexo() {
 		return sexo;
 	}

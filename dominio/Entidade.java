@@ -1,9 +1,15 @@
 package dominio;
 
-public abstract class Entidade {
+public abstract class Entidade extends Selecionavel {
 	protected mapa.Mapa mapa;
 	protected EntidadeEstado estado;
 	protected Ponto2D posicao;
+	
+	protected Entidade() {}
+	
+	protected Entidade(Integer type) {
+		super(type);
+	}
 	
 	public abstract mapa.Mapa getMapa();
 	

@@ -2,9 +2,9 @@ package aplicacao;
 
 import java.util.List;
 
+import dominio.Item;
 import dominio.Personagem;
 import dominio.item.ElementoItem;
-import dominio.item.Item;
 import dominio.npc.Loja;
 
 public class AplUsarLoja {

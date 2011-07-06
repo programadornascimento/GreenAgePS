@@ -17,6 +17,10 @@ public class Personagem extends Entidade {
 	private Inventario inventario;
 	private Classe classe;
 	
+	public Personagem(Integer type) {
+		super(type);
+	}
+	
 	public mapa.Mapa getMapa() {
 		return mapa;
 	}

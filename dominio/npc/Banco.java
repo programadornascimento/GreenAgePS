@@ -7,6 +7,11 @@ public class Banco extends NPC {
 	private Personagem titular;
 	private Integer saldo;
 	
+	public Banco() {
+		super(2);
+		super.register(this);
+	}
+	
 	public Personagem getTitular() {
 		return titular;
 	}

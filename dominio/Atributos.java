@@ -11,6 +11,20 @@ public class Atributos {
 	private Integer dextreza;
 	private Integer constituicao;
 	
+	public Atributos(Integer exp, Integer maxHp, Integer hp, Integer maxMp,
+			Integer mp, Integer forca, Integer inteligencia, Integer dextreza,
+			Integer constituicao) {
+		this.exp = exp;
+		this.maxHp = maxHp;
+		this.hp = hp;
+		this.maxMp = maxMp;
+		this.mp = mp;
+		this.forca = forca;
+		this.inteligencia = inteligencia;
+		this.dextreza = dextreza;
+		this.constituicao = constituicao;
+	}
+
 	public Integer getExp() {
 		return exp;
 	}

@@ -7,6 +7,11 @@ import dominio.Personagem;
 public class Armazem extends NPC {
 	private Personagem titular;
 	private Inventario estoque;
+	
+	private Armazem() {
+		super(1);
+		super.register(this);
+	}
 
 	public Personagem getTitular() {
 		return titular;
